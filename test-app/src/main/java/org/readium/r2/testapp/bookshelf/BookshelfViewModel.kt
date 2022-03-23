@@ -83,6 +83,7 @@ class BookshelfViewModel(application: Application) : AndroidViewModel(applicatio
         mediaType: MediaType,
         publication: Publication
     ): Long {
+        if (mediaType == MediaType.PDF) return -1L
         val id = repository.insertBook(href, mediaType, publication)
         storeCoverImage(publication, id.toString())
         return id
