@@ -96,7 +96,7 @@ dependencies {
 //    deprecated library due to JCenter Issue
 //    implementation "com.shopgun.android:utils:1.0.9"
 //    api "com.github.barteksc:android-pdf-viewer:2.8.2"
-    implementation "com.duolingo.open:rtl-viewpager:1.0.3"
+//    implementation "com.duolingo.open:rtl-viewpager:1.0.3"
 
     testImplementation "junit:junit:4.13.2"
     testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"

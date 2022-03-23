@@ -10,7 +10,6 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
         mavenLocal()
         mavenCentral()
         maven { url 'https://jitpack.io' }
@@ -28,7 +27,6 @@ apply plugin: 'org.jetbrains.dokka'
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenLocal()
         mavenCentral()
         maven { url 'https://jitpack.io' }
