@@ -38,7 +38,7 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.readium'
+                groupId = 'com.github.ekwarin'
                 artifactId = 'readium-opds'
             }
         }
