@@ -9,14 +9,13 @@
         <meta name="description" content="Readium Mobile is a toolkit for ebooks, audiobooks and comics written in Swift & Kotlin.">
       
       
-      
         <meta name="author" content="Readium Foundation">
       
       
         <link rel="canonical" href="https://github.com/readium/kotlin-toolkit/2.1.1/readium/navigator/navigator/org.readium.r2.navigator.epub.fxl/-r2-f-x-l-layout/">
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
@@ -24,29 +23,29 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.db9e7362.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.8c5ef100.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.9647289d.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="../../../../../readium_colors.css">
     
+    <script>__md_scope=new URL("../../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-
 
     
     
@@ -61,7 +60,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -78,6 +76,13 @@
       
     </div>
     
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
       
 
 <header class="md-header" data-md-component="header">
@@ -85,11 +90,11 @@
     <a href="../../../../.." title="Readium Kotlin" class="md-header__button md-logo" aria-label="Readium Kotlin" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -111,22 +116,21 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -146,11 +150,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/readium/kotlin-toolkit/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/readium/kotlin-toolkit" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     kotlin-toolkit
@@ -185,18 +188,17 @@
     <a href="../../../../.." title="Readium Kotlin" class="md-nav__button md-logo" aria-label="Readium Kotlin" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
     Readium Kotlin
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/readium/kotlin-toolkit/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/readium/kotlin-toolkit" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     kotlin-toolkit
@@ -337,6 +339,7 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -390,12 +393,13 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/readium/kotlin-toolkit/edit/master/docs/readium/navigator/navigator/org.readium.r2.navigator.epub.fxl/-r2-f-x-l-layout/index.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                <p>//<a href="../../../">navigator</a>/<a href="../">org.readium.r2.navigator.epub.fxl</a>/<a href="./">R2FXLLayout</a></p>
+  <a href="https://github.com/readium/kotlin-toolkit/edit/master/docs/readium/navigator/navigator/org.readium.r2.navigator.epub.fxl/-r2-f-x-l-layout/index.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<p>//<a href="../../../">navigator</a>/<a href="../">org.readium.r2.navigator.epub.fxl</a>/<a href="./">R2FXLLayout</a></p>
 <h1 id="r2fxllayout">R2FXLLayout<a class="headerlink" href="#r2fxllayout" title="Permanent link">&para;</a></h1>
 <p>[androidJvm]\
 class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/reference/kotlin/android/widget/FrameLayout.html">FrameLayout</a></p>
@@ -559,6 +563,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#-854009566%2FFunctions%2F-535623568">bringToFront</a>()</td>
 </tr>
 <tr>
+<td><a href="./#119775402%2FFunctions%2F-535623568">buildDrawingCache</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#119775402%2FFunctions%2F-535623568">~~buildDrawingCache~~</a>~~(~~~~)~~<br>~~open~~ ~~fun~~ <a href="./#-1075046801%2FFunctions%2F-535623568">~~buildDrawingCache~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>~~)~~</td>
+</tr>
+<tr>
 <td><a href="./#2069776955%2FFunctions%2F-535623568">buildLayer</a></td>
 <td>[androidJvm]<br>open fun <a href="./#2069776955%2FFunctions%2F-535623568">buildLayer</a>()</td>
 </tr>
@@ -685,6 +693,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <tr>
 <td><a href="./#-1866123576%2FFunctions%2F-535623568">debug</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-1866123576%2FFunctions%2F-535623568">debug</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)</td>
+</tr>
+<tr>
+<td><a href="./#-1451492642%2FFunctions%2F-535623568">destroyDrawingCache</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-1451492642%2FFunctions%2F-535623568">~~destroyDrawingCache~~</a>~~(~~~~)~~</td>
 </tr>
 <tr>
 <td><a href="./#-1485093303%2FFunctions%2F-535623568">detachAllViewsFromParent</a></td>
@@ -827,6 +839,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open override fun <a href="./#-56059327%2FFunctions%2F-535623568">dispatchStartTemporaryDetach</a>()</td>
 </tr>
 <tr>
+<td><a href="./#2118679254%2FFunctions%2F-535623568">dispatchSystemUiVisibilityChanged</a></td>
+<td>[androidJvm]<br>~~open~~ ~~override~~ ~~fun~~ <a href="./#2118679254%2FFunctions%2F-535623568">~~dispatchSystemUiVisibilityChanged~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~)~~</td>
+</tr>
+<tr>
 <td><a href="./#587101571%2FFunctions%2F-535623568">dispatchThawSelfOnly</a></td>
 <td>[androidJvm]<br>open fun <a href="./#587101571%2FFunctions%2F-535623568">dispatchThawSelfOnly</a>(p0: <a href="https://developer.android.com/reference/kotlin/android/util/SparseArray.html">SparseArray</a>&lt;<a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a>&gt;)</td>
 </tr>
@@ -867,6 +883,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open override fun <a href="./#1595326303%2FFunctions%2F-535623568">dispatchWindowInsetsAnimationStart</a>(p0: <a href="https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.html">WindowInsetsAnimation</a>, p1: <a href="https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Bounds.html">WindowInsetsAnimation.Bounds</a>): <a href="https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Bounds.html">WindowInsetsAnimation.Bounds</a></td>
 </tr>
 <tr>
+<td><a href="./#510464853%2FFunctions%2F-535623568">dispatchWindowSystemUiVisiblityChanged</a></td>
+<td>[androidJvm]<br>~~open~~ ~~override~~ ~~fun~~ <a href="./#510464853%2FFunctions%2F-535623568">~~dispatchWindowSystemUiVisiblityChanged~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~)~~</td>
+</tr>
+<tr>
 <td><a href="./#734012323%2FFunctions%2F-535623568">dispatchWindowVisibilityChanged</a></td>
 <td>[androidJvm]<br>open override fun <a href="./#734012323%2FFunctions%2F-535623568">dispatchWindowVisibilityChanged</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)</td>
 </tr>
@@ -905,6 +925,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <tr>
 <td><a href="./#-1079598873%2FFunctions%2F-535623568">findViewWithTag</a></td>
 <td>[androidJvm]<br>fun &lt;<a href="./#-1079598873%2FFunctions%2F-535623568">T</a> : <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>&gt; <a href="./#-1079598873%2FFunctions%2F-535623568">findViewWithTag</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>): <a href="./#-1079598873%2FFunctions%2F-535623568">T</a></td>
+</tr>
+<tr>
+<td><a href="./#-825351457%2FFunctions%2F-535623568">fitSystemWindows</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-825351457%2FFunctions%2F-535623568">~~fitSystemWindows~~</a>~~(~~~~p0~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a>~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
 <tr>
 <td><a href="./#-111905720%2FFunctions%2F-535623568">focusableViewAvailable</a></td>
@@ -1079,6 +1103,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#-1834642195%2FFunctions%2F-535623568">getClipToPadding</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
 <tr>
+<td><a href="./#-1215568987%2FFunctions%2F-535623568">getConsiderGoneChildrenWhenMeasuring</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-1215568987%2FFunctions%2F-535623568">~~getConsiderGoneChildrenWhenMeasuring~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
+</tr>
+<tr>
 <td><a href="./#2066185835%2FFunctions%2F-535623568">getContentCaptureSession</a></td>
 <td>[androidJvm]<br>fun <a href="./#2066185835%2FFunctions%2F-535623568">getContentCaptureSession</a>(): <a href="https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession.html">ContentCaptureSession</a>?</td>
 </tr>
@@ -1109,6 +1137,18 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <tr>
 <td><a href="./#-32712863%2FFunctions%2F-535623568">getDrawableState</a></td>
 <td>[androidJvm]<br>fun <a href="./#-32712863%2FFunctions%2F-535623568">getDrawableState</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html">IntArray</a></td>
+</tr>
+<tr>
+<td><a href="./#-1299460990%2FFunctions%2F-535623568">getDrawingCache</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-1299460990%2FFunctions%2F-535623568">~~getDrawingCache~~</a>~~(~~~~)~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a><br>~~open~~ ~~fun~~ <a href="./#21932103%2FFunctions%2F-535623568">~~getDrawingCache~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>~~)~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a></td>
+</tr>
+<tr>
+<td><a href="./#-1918169277%2FFunctions%2F-535623568">getDrawingCacheBackgroundColor</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-1918169277%2FFunctions%2F-535623568">~~getDrawingCacheBackgroundColor~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></td>
+</tr>
+<tr>
+<td><a href="./#-1327033511%2FFunctions%2F-535623568">getDrawingCacheQuality</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-1327033511%2FFunctions%2F-535623568">~~getDrawingCacheQuality~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></td>
 </tr>
 <tr>
 <td><a href="./#-1354963960%2FFunctions%2F-535623568">getDrawingRect</a></td>
@@ -1411,6 +1451,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#-753511977%2FFunctions%2F-535623568">getParentForAccessibility</a>(): <a href="https://developer.android.com/reference/kotlin/android/view/ViewParent.html">ViewParent</a></td>
 </tr>
 <tr>
+<td><a href="./#-743348084%2FFunctions%2F-535623568">getPersistentDrawingCache</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-743348084%2FFunctions%2F-535623568">~~getPersistentDrawingCache~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></td>
+</tr>
+<tr>
 <td><a href="./#-1941206736%2FFunctions%2F-535623568">getPivotX</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-1941206736%2FFunctions%2F-535623568">getPivotX</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></td>
 </tr>
@@ -1539,6 +1583,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#-930728423%2FFunctions%2F-535623568">getSystemGestureExclusionRects</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a>&gt;</td>
 </tr>
 <tr>
+<td><a href="./#-989636527%2FFunctions%2F-535623568">getSystemUiVisibility</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-989636527%2FFunctions%2F-535623568">~~getSystemUiVisibility~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></td>
+</tr>
+<tr>
 <td><a href="./#-743910150%2FFunctions%2F-535623568">getTag</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-743910150%2FFunctions%2F-535623568">getTag</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><br>open fun <a href="./#-332636648%2FFunctions%2F-535623568">getTag</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></td>
 </tr>
@@ -1651,6 +1699,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#-2137821756%2FFunctions%2F-535623568">getWindowInsetsController</a>(): <a href="https://developer.android.com/reference/kotlin/android/view/WindowInsetsController.html">WindowInsetsController</a>?</td>
 </tr>
 <tr>
+<td><a href="./#1912079233%2FFunctions%2F-535623568">getWindowSystemUiVisibility</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#1912079233%2FFunctions%2F-535623568">~~getWindowSystemUiVisibility~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></td>
+</tr>
+<tr>
 <td><a href="./#1057378443%2FFunctions%2F-535623568">getWindowToken</a></td>
 <td>[androidJvm]<br>open fun <a href="./#1057378443%2FFunctions%2F-535623568">getWindowToken</a>(): <a href="https://developer.android.com/reference/kotlin/android/os/IBinder.html">IBinder</a></td>
 </tr>
@@ -1720,7 +1772,15 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 </tr>
 <tr>
 <td><a href="./#271739779%2FFunctions%2F-535623568">invalidate</a></td>
-<td>[androidJvm]<br>open fun <a href="./#271739779%2FFunctions%2F-535623568">invalidate</a>()</td>
+<td>[androidJvm]<br>open fun <a href="./#271739779%2FFunctions%2F-535623568">invalidate</a>()<br>~~open~~ ~~fun~~ <a href="./#1496821911%2FFunctions%2F-535623568">~~invalidate~~</a>~~(~~~~p0~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a>~~)~~<br>~~open~~ ~~fun~~ <a href="./#117264444%2FFunctions%2F-535623568">~~invalidate~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~,~~ ~~p1~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~,~~ ~~p2~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~,~~ ~~p3~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~)~~</td>
+</tr>
+<tr>
+<td><a href="./#1165414322%2FFunctions%2F-535623568">invalidateChild</a></td>
+<td>[androidJvm]<br>~~override~~ ~~fun~~ <a href="./#1165414322%2FFunctions%2F-535623568">~~invalidateChild~~</a>~~(~~~~p0~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>~~,~~ ~~p1~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a>~~)~~</td>
+</tr>
+<tr>
+<td><a href="./#2084139161%2FFunctions%2F-535623568">invalidateChildInParent</a></td>
+<td>[androidJvm]<br>~~open~~ ~~override~~ ~~fun~~ <a href="./#2084139161%2FFunctions%2F-535623568">~~invalidateChildInParent~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html">IntArray</a>~~,~~ ~~p1~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a>~~)~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/view/ViewParent.html">ViewParent</a></td>
 </tr>
 <tr>
 <td><a href="./#-1005306885%2FFunctions%2F-535623568">invalidateDrawable</a></td>
@@ -1743,12 +1803,24 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#-608700075%2FFunctions%2F-535623568">isActivated</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
 <tr>
+<td><a href="./#162329255%2FFunctions%2F-535623568">isAlwaysDrawnWithCacheEnabled</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#162329255%2FFunctions%2F-535623568">~~isAlwaysDrawnWithCacheEnabled~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
+</tr>
+<tr>
+<td><a href="./#595478212%2FFunctions%2F-535623568">isAnimationCacheEnabled</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#595478212%2FFunctions%2F-535623568">~~isAnimationCacheEnabled~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
+</tr>
+<tr>
 <td><a href="./#-906977243%2FFunctions%2F-535623568">isAttachedToWindow</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-906977243%2FFunctions%2F-535623568">isAttachedToWindow</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
 <tr>
 <td><a href="./#-1432758699%2FFunctions%2F-535623568">isChildrenDrawingOrderEnabled</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-1432758699%2FFunctions%2F-535623568">isChildrenDrawingOrderEnabled</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
+</tr>
+<tr>
+<td><a href="./#-256722921%2FFunctions%2F-535623568">isChildrenDrawnWithCacheEnabled</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-256722921%2FFunctions%2F-535623568">~~isChildrenDrawnWithCacheEnabled~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
 <tr>
 <td><a href="./#133730660%2FFunctions%2F-535623568">isClickable</a></td>
@@ -1761,6 +1833,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <tr>
 <td><a href="./#1764572916%2FFunctions%2F-535623568">isDirty</a></td>
 <td>[androidJvm]<br>open fun <a href="./#1764572916%2FFunctions%2F-535623568">isDirty</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
+</tr>
+<tr>
+<td><a href="./#116625609%2FFunctions%2F-535623568">isDrawingCacheEnabled</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#116625609%2FFunctions%2F-535623568">~~isDrawingCacheEnabled~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
 <tr>
 <td><a href="./#1414800833%2FFunctions%2F-535623568">isDuplicateParentStateEnabled</a></td>
@@ -2303,6 +2379,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#1329354872%2FFunctions%2F-535623568">onWindowFocusChanged</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)</td>
 </tr>
 <tr>
+<td><a href="./#-767727062%2FFunctions%2F-535623568">onWindowSystemUiVisibilityChanged</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-767727062%2FFunctions%2F-535623568">~~onWindowSystemUiVisibilityChanged~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~)~~</td>
+</tr>
+<tr>
 <td><a href="./#1652552295%2FFunctions%2F-535623568">onWindowVisibilityChanged</a></td>
 <td>[androidJvm]<br>open fun <a href="./#1652552295%2FFunctions%2F-535623568">onWindowVisibilityChanged</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)</td>
 </tr>
@@ -2443,6 +2523,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open override fun <a href="./#-140197233%2FFunctions%2F-535623568">requestDisallowInterceptTouchEvent</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)</td>
 </tr>
 <tr>
+<td><a href="./#-1615863926%2FFunctions%2F-535623568">requestFitSystemWindows</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-1615863926%2FFunctions%2F-535623568">~~requestFitSystemWindows~~</a>~~(~~~~)~~</td>
+</tr>
+<tr>
 <td><a href="./#-1218783051%2FFunctions%2F-535623568">requestFocus</a></td>
 <td>[androidJvm]<br>fun <a href="./#-1218783051%2FFunctions%2F-535623568">requestFocus</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><br>fun <a href="./#-897240045%2FFunctions%2F-535623568">requestFocus</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><br>open override fun <a href="./#-805133907%2FFunctions%2F-535623568">requestFocus</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, p1: <a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
@@ -2563,8 +2647,16 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#-1247291245%2FFunctions%2F-535623568">setAlpha</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>)</td>
 </tr>
 <tr>
+<td><a href="./#-803994332%2FFunctions%2F-535623568">setAlwaysDrawnWithCacheEnabled</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-803994332%2FFunctions%2F-535623568">~~setAlwaysDrawnWithCacheEnabled~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>~~)~~</td>
+</tr>
+<tr>
 <td><a href="./#-284340276%2FFunctions%2F-535623568">setAnimation</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-284340276%2FFunctions%2F-535623568">setAnimation</a>(p0: <a href="https://developer.android.com/reference/kotlin/android/view/animation/Animation.html">Animation</a>)</td>
+</tr>
+<tr>
+<td><a href="./#323312769%2FFunctions%2F-535623568">setAnimationCacheEnabled</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#323312769%2FFunctions%2F-535623568">~~setAnimationCacheEnabled~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>~~)~~</td>
 </tr>
 <tr>
 <td><a href="./#-1888561119%2FFunctions%2F-535623568">setAnimationMatrix</a></td>
@@ -2585,6 +2677,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <tr>
 <td><a href="./#-1996321655%2FFunctions%2F-535623568">setBackgroundColor</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-1996321655%2FFunctions%2F-535623568">setBackgroundColor</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)</td>
+</tr>
+<tr>
+<td><a href="./#-771685500%2FFunctions%2F-535623568">setBackgroundDrawable</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-771685500%2FFunctions%2F-535623568">~~setBackgroundDrawable~~</a>~~(~~~~p0~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a>~~)~~</td>
 </tr>
 <tr>
 <td><a href="./#9634556%2FFunctions%2F-535623568">setBackgroundResource</a></td>
@@ -2611,8 +2707,16 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#1148359121%2FFunctions%2F-535623568">setCameraDistance</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>)</td>
 </tr>
 <tr>
+<td><a href="./#-2043490938%2FFunctions%2F-535623568">setChildrenDrawingCacheEnabled</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-2043490938%2FFunctions%2F-535623568">~~setChildrenDrawingCacheEnabled~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>~~)~~</td>
+</tr>
+<tr>
 <td><a href="./#106553426%2FFunctions%2F-535623568">setChildrenDrawingOrderEnabled</a></td>
 <td>[androidJvm]<br>open fun <a href="./#106553426%2FFunctions%2F-535623568">setChildrenDrawingOrderEnabled</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)</td>
+</tr>
+<tr>
+<td><a href="./#-1703769964%2FFunctions%2F-535623568">setChildrenDrawnWithCacheEnabled</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-1703769964%2FFunctions%2F-535623568">~~setChildrenDrawnWithCacheEnabled~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>~~)~~</td>
 </tr>
 <tr>
 <td><a href="./#-1324413373%2FFunctions%2F-535623568">setClickable</a></td>
@@ -2653,6 +2757,18 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <tr>
 <td><a href="./#-803411350%2FFunctions%2F-535623568">setDescendantFocusability</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-803411350%2FFunctions%2F-535623568">setDescendantFocusability</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)</td>
+</tr>
+<tr>
+<td><a href="./#1985917229%2FFunctions%2F-535623568">setDrawingCacheBackgroundColor</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#1985917229%2FFunctions%2F-535623568">~~setDrawingCacheBackgroundColor~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~)~~</td>
+</tr>
+<tr>
+<td><a href="./#1259028584%2FFunctions%2F-535623568">setDrawingCacheEnabled</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#1259028584%2FFunctions%2F-535623568">~~setDrawingCacheEnabled~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>~~)~~</td>
+</tr>
+<tr>
+<td><a href="./#990109123%2FFunctions%2F-535623568">setDrawingCacheQuality</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#990109123%2FFunctions%2F-535623568">~~setDrawingCacheQuality~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~)~~</td>
 </tr>
 <tr>
 <td><a href="./#1279199584%2FFunctions%2F-535623568">setDuplicateParentStateEnabled</a></td>
@@ -2919,6 +3035,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#-1623138117%2FFunctions%2F-535623568">setOnScrollChangeListener</a>(p0: <a href="https://developer.android.com/reference/kotlin/android/view/View.OnScrollChangeListener.html">View.OnScrollChangeListener</a>)</td>
 </tr>
 <tr>
+<td><a href="./#-73853013%2FFunctions%2F-535623568">setOnSystemUiVisibilityChangeListener</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-73853013%2FFunctions%2F-535623568">~~setOnSystemUiVisibilityChangeListener~~</a>~~(~~~~p0~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/view/View.OnSystemUiVisibilityChangeListener.html">View.OnSystemUiVisibilityChangeListener</a>~~)~~</td>
+</tr>
+<tr>
 <td><a href="set-on-touch-listener/">setOnTouchListener</a></td>
 <td>[androidJvm]<br>open override fun <a href="set-on-touch-listener/">setOnTouchListener</a>(l: <a href="https://developer.android.com/reference/kotlin/android/view/View.OnTouchListener.html">View.OnTouchListener</a>)</td>
 </tr>
@@ -2945,6 +3065,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <tr>
 <td><a href="./#638866748%2FFunctions%2F-535623568">setPaddingRelative</a></td>
 <td>[androidJvm]<br>open fun <a href="./#638866748%2FFunctions%2F-535623568">setPaddingRelative</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, p1: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, p2: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, p3: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)</td>
+</tr>
+<tr>
+<td><a href="./#125086622%2FFunctions%2F-535623568">setPersistentDrawingCache</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#125086622%2FFunctions%2F-535623568">~~setPersistentDrawingCache~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~)~~</td>
 </tr>
 <tr>
 <td><a href="./#-1484013003%2FFunctions%2F-535623568">setPivotX</a></td>
@@ -3079,6 +3203,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#727846859%2FFunctions%2F-535623568">setSystemGestureExclusionRects</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a>&lt;<a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a>&gt;)</td>
 </tr>
 <tr>
+<td><a href="./#616809251%2FFunctions%2F-535623568">setSystemUiVisibility</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#616809251%2FFunctions%2F-535623568">~~setSystemUiVisibility~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~)~~</td>
+</tr>
+<tr>
 <td><a href="./#1626051463%2FFunctions%2F-535623568">setTag</a></td>
 <td>[androidJvm]<br>open fun <a href="./#1626051463%2FFunctions%2F-535623568">setTag</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>)<br>open fun <a href="./#1530228252%2FFunctions%2F-535623568">setTag</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, p1: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>)</td>
 </tr>
@@ -3163,6 +3291,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#-2084024186%2FFunctions%2F-535623568">setVisibility</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>)</td>
 </tr>
 <tr>
+<td><a href="./#900661896%2FFunctions%2F-535623568">setWillNotCacheDrawing</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#900661896%2FFunctions%2F-535623568">~~setWillNotCacheDrawing~~</a>~~(~~~~p0~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>~~)~~</td>
+</tr>
+<tr>
 <td><a href="./#-2110348160%2FFunctions%2F-535623568">setWillNotDraw</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-2110348160%2FFunctions%2F-535623568">setWillNotDraw</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)</td>
 </tr>
@@ -3205,6 +3337,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <tr>
 <td><a href="./#-666647668%2FFunctions%2F-535623568">startAnimation</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-666647668%2FFunctions%2F-535623568">startAnimation</a>(p0: <a href="https://developer.android.com/reference/kotlin/android/view/animation/Animation.html">Animation</a>)</td>
+</tr>
+<tr>
+<td><a href="./#2114721008%2FFunctions%2F-535623568">startDrag</a></td>
+<td>[androidJvm]<br>~~fun~~ <a href="./#2114721008%2FFunctions%2F-535623568">~~startDrag~~</a>~~(~~~~p0~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/content/ClipData.html">ClipData</a>~~,~~ ~~p1~~~~:~~ <a href="https://developer.android.com/reference/kotlin/android/view/View.DragShadowBuilder.html">View.DragShadowBuilder</a>~~,~~ ~~p2~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>~~,~~ ~~p3~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
 <tr>
 <td><a href="./#245838264%2FFunctions%2F-535623568">startDragAndDrop</a></td>
@@ -3259,6 +3395,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 <td>[androidJvm]<br>open fun <a href="./#2146991229%2FFunctions%2F-535623568">verifyDrawable</a>(p0: <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
 <tr>
+<td><a href="./#-1681955745%2FFunctions%2F-535623568">willNotCacheDrawing</a></td>
+<td>[androidJvm]<br>~~open~~ ~~fun~~ <a href="./#-1681955745%2FFunctions%2F-535623568">~~willNotCacheDrawing~~</a>~~(~~~~)~~~~:~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
+</tr>
+<tr>
 <td><a href="./#-691997609%2FFunctions%2F-535623568">willNotDraw</a></td>
 <td>[androidJvm]<br>open fun <a href="./#-691997609%2FFunctions%2F-535623568">willNotDraw</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></td>
 </tr>
@@ -3311,11 +3451,6 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
 </tr>
 </tbody>
 </table>
-                
-              
-              
-                
-
 
               
             </article>
@@ -3324,25 +3459,23 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2021 Readium Foundation
-          </div>
-        
-        
-          Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-            Material for MkDocs
-          </a>
-        
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 Readium Foundation
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -3352,10 +3485,10 @@ class <a href="./">R2FXLLayout</a> : <a href="https://developer.android.com/refe
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../../assets/javascripts/workers/search.8397ff9e.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": [], "search": "../../../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.748e2769.min.js"></script>
       
     
   </body>
