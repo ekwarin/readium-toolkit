@@ -117,6 +117,8 @@ class EpubNavigatorFragment private constructor(
 
     internal var navigatorDelegate: NavigatorDelegate? = null
 
+    var test: String = "test update second try"
+
     private val r2Activity: R2EpubActivity? get() = activity as? R2EpubActivity
 
     private var _binding: ActivityR2ViewpagerBinding? = null
@@ -258,10 +260,6 @@ class EpubNavigatorFragment private constructor(
     override fun onResume() {
         super.onResume()
         notifyCurrentLocation()
-    }
-
-    fun test() {
-        Log.e("checkTest","it's updated.")
     }
 
     /**
