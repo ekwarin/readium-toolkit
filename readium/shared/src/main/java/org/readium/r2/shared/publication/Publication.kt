@@ -551,9 +551,4 @@ class Publication(
     @Deprecated("Use `metadata.effectiveReadingProgression` instead", ReplaceWith("metadata.effectiveReadingProgression"), level = DeprecationLevel.ERROR)
     @Suppress("UNUSED_PARAMETER")
     fun contentLayoutForLanguage(language: String?) = metadata.effectiveReadingProgression
-
-    fun test() {
-        Log.e("checkTest","it's updated.")
-    }
-
 }
