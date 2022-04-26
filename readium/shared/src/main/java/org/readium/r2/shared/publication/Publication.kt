@@ -552,4 +552,8 @@ class Publication(
     @Suppress("UNUSED_PARAMETER")
     fun contentLayoutForLanguage(language: String?) = metadata.effectiveReadingProgression
 
+    fun test() {
+        Log.e("checkTest","it's updated.")
+    }
+
 }
