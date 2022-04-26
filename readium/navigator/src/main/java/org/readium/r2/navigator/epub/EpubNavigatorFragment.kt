@@ -12,6 +12,7 @@ import android.graphics.PointF
 import android.graphics.RectF
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.ActionMode
 import android.view.LayoutInflater
 import android.view.View
@@ -257,6 +258,10 @@ class EpubNavigatorFragment private constructor(
     override fun onResume() {
         super.onResume()
         notifyCurrentLocation()
+    }
+
+    fun test() {
+        Log.e("checkTest","it's updated.")
     }
 
     /**
