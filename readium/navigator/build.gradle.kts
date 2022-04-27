@@ -79,8 +79,8 @@ dependencies {
     implementation("androidx.webkit:webkit:1.4.0")
     // Needed to avoid a crash with API 31, see https://stackoverflow.com/a/69152986/1474476
     implementation("androidx.work:work-runtime-ktx:2.7.1")
-    implementation("com.duolingo.open:rtl-viewpager:1.0.3")
-    api("com.github.barteksc:android-pdf-viewer:2.8.2")
+//    implementation("com.duolingo.open:rtl-viewpager:1.0.3")
+//    api("com.github.barteksc:android-pdf-viewer:2.8.2")
     // ChrisBane/PhotoView ( for the Zoom handling )
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
 
@@ -94,7 +94,7 @@ dependencies {
     api("com.google.android.exoplayer:extension-workmanager:2.16.1")
     implementation("com.google.android.material:material:1.5.0")
     implementation("com.jakewharton.timber:timber:5.0.1")
-    implementation("com.shopgun.android:utils:1.0.9")
+//    implementation("com.shopgun.android:utils:1.0.9")
     implementation("joda-time:joda-time:2.10.13")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
